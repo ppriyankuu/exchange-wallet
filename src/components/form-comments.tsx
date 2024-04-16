@@ -38,7 +38,7 @@ const FormComment: FC<FormCommentProps> = ({ postId }) => {
       <div className='mt-4'>
         <label
           htmlFor='comment'
-          className='block text-gray-700 text-sm font-bold mb-2'
+          className='block text-gray-500 text-sm font-bold mb-2'
         >
           Add Comment
         </label>
@@ -46,7 +46,7 @@ const FormComment: FC<FormCommentProps> = ({ postId }) => {
           value={comment}
           onChange={handleCommentChange}
           type='text'
-          className='w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300'
+          className='w-full text-black py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300'
           name='comment'
         />
         <button

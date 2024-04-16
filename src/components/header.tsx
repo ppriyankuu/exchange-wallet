@@ -24,7 +24,7 @@ const Header = async () => {
             <li>
               <Link
                 href='/api/auth/signin'
-                className='text-white hover:underline'
+                className='text-white hover:underline px-4 py-2 bg-black'
               >
                 login
               </Link>

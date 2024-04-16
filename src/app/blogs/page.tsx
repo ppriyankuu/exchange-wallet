@@ -19,7 +19,7 @@ const BlogsPage = async () => {
           <Link
             key={post.id}
             href={`/blogs/${post.id}`}
-            className='bg-white p-4 rounded-md shadow-md'
+            className='bg-white text-black p-4 rounded-md shadow-md'
           >
             <h2 className='text-xl font-bold'>{post.title}</h2>
             <p>Written by: {post.author?.name}</p>

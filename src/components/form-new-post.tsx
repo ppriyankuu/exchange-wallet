@@ -48,7 +48,7 @@ const FormNewPost = () => {
       <div className='mb-4'>
         <input
           type='text'
-          className={inputClass}
+          className={`${inputClass} text-black`}
           placeholder='Enter the title'
           name='title'
           value={formData.title}
@@ -59,7 +59,7 @@ const FormNewPost = () => {
         <ReactTextareaAutosize
           minRows={5}
           name='content'
-          className={inputClass}
+          className={`${inputClass} text-black`}
           placeholder='Enter the content'
           value={formData.content}
           onChange={handleChange}
