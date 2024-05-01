@@ -29,7 +29,7 @@ const Comments: FC<CommentsProps> = async ({ postId }) => {
                 {format(comment.createdAt, 'MMMM d, yyyy')}
               </div>
             </div>
-            <p>{comment.text}</p>
+            <p className='text-black'>{comment.text}</p>
           </li>
         ))}
       </ul>

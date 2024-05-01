@@ -37,6 +37,7 @@ const FormNewPost = () => {
 
       if (response.status === 200) {
         router.push(`/blogs/${response.data.newPost.id}`);
+        router.refresh();
       }
     } catch (error) {
       console.error(error);
@@ -44,31 +45,31 @@ const FormNewPost = () => {
   };
 
   return (
-    <form className='max-w-md mx-auto p-4' onSubmit={handleSubmit}>
-      <div className='mb-4'>
+    <form className="max-w-md mx-auto p-4" onSubmit={handleSubmit}>
+      <div className="mb-4">
         <input
-          type='text'
+          type="text"
           className={`${inputClass} text-black`}
-          placeholder='Enter the title'
-          name='title'
+          placeholder="Enter the title"
+          name="title"
           value={formData.title}
           onChange={handleChange}
         />
       </div>
-      <div className='mb-4'>
+      <div className="mb-4">
         <ReactTextareaAutosize
           minRows={5}
-          name='content'
+          name="content"
           className={`${inputClass} text-black`}
-          placeholder='Enter the content'
+          placeholder="Enter the content"
           value={formData.content}
           onChange={handleChange}
         />
       </div>
       <button
         disabled={!data?.user?.email}
-        type='submit'
-        className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 w-full disabled:bg-gray-400'
+        type="submit"
+        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 w-full disabled:bg-gray-400"
       >
         Submit
       </button>
